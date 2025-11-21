@@ -12,3 +12,5 @@ Route::get('/about', function () {
 
 Route::get('/user/{id}', [App\Http\Controllers\UserController::class,
  'show'])->name('user.show');
+
+Route::resource('products', app\Http\Controllers\ProductController::class);
