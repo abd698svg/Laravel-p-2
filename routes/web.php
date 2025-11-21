@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+Route::get('/user/{id}', [App\Http\Controllers\UserController::class,
+ 'show'])->name('user.show');
