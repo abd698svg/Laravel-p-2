@@ -3,4 +3,3 @@
     user id {{$user['id']}}
     user email {{$user['email']}}
 </html>
-
